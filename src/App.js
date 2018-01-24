@@ -4,7 +4,7 @@ import { mean } from 'mathjs'
 import './App.css'
 import students from './assets/data.json'
 
-import { GroupTable } from './components'
+import { GroupTable, GroupDetails } from './components'
 
 class App extends Component {
 
@@ -47,14 +47,6 @@ class App extends Component {
         selectedGroupBId: groupNumber
       }))
     }
-    // else {
-
-    //   throw new Error('HandleTableRowClick one more if-else branch', {
-    //     groupNumber,
-    //     selectedGroupAId: this.state.selectedGroupAId,
-    //     selectedGroupBId: this.state.selectedGroupBId
-    //   })
-    // }
 
   }
 
@@ -97,6 +89,13 @@ class App extends Component {
       return group
     })
 
+    const selectedGroupA = groupTableDataWithAverageScores.find(
+      group => group.groupNumber === this.state.selectedGroupAId
+    )
+    const selectedGroupB = groupTableDataWithAverageScores.find(
+      group => group.groupNumber === this.state.selectedGroupBId
+    )
+
     // const student = this.state.students[this.state.currentStudentId]
     // const radarChartData = [
     //   { skill: 'Information Visualization', value: student.infoViz },
@@ -117,14 +116,30 @@ class App extends Component {
           <h1 className="App-title">Student Group Formation Visualization</h1>
         </header>
         <div id="appView" className="container-fluid">
-          <h3 id="groupTitle">Groups balanced on skill level</h3>
-          <GroupTable 
-            data={groupTableDataWithAverageScores}
-            onTableRowClick={this.handleTableRowClick}
-            primarySelection={this.state.selectedGroupAId}
-            secondarySelection={this.state.selectedGroupBId}
-            disableRowPointer={(this.state.selectedGroupAId !== undefined) && (this.state.selectedGroupBId !== undefined)}
-          />
+          <div className="row">
+            <div className="col-12">
+              <h3 id="groupTitle">Groups balanced on skill level</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <GroupTable 
+                data={groupTableDataWithAverageScores}
+                onTableRowClick={this.handleTableRowClick}
+                primarySelection={this.state.selectedGroupAId}
+                secondarySelection={this.state.selectedGroupBId}
+                disableRowPointer={(this.state.selectedGroupAId !== undefined) && (this.state.selectedGroupBId !== undefined)}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-6">
+              <GroupDetails data={selectedGroupA}/>
+            </div>
+            <div className="col-6">
+              <GroupDetails data={selectedGroupB}/>
+            </div>
+          </div>
         </div>
       </div>
     );
