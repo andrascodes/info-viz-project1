@@ -14,7 +14,9 @@
     "interactionProgramming": 7,
     "uxEvaluation": 6,
     "teamwork": 2.5,
-    "groupNumber": 1
+    "groupNumber": 1,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 46,
@@ -31,7 +33,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 8,
     "teamwork": 10,
-    "groupNumber": 1
+    "groupNumber": 1,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 6,
@@ -48,7 +52,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 4,
     "teamwork": 9,
-    "groupNumber": 1
+    "groupNumber": 1,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 3,
@@ -65,7 +71,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 4,
     "teamwork": 7.5,
-    "groupNumber": 1
+    "groupNumber": 1,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 77,
@@ -82,7 +90,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 2,
     "teamwork": 8,
-    "groupNumber": 1
+    "groupNumber": 1,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 4,
@@ -99,7 +109,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 5,
     "teamwork": 9,
-    "groupNumber": 1
+    "groupNumber": 1,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 32,
@@ -116,7 +128,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 2,
     "teamwork": 8.5,
-    "groupNumber": 1
+    "groupNumber": 1,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 67,
@@ -133,7 +147,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 1,
     "teamwork": 3,
-    "groupNumber": 1
+    "groupNumber": 1,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 48,
@@ -150,7 +166,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 3,
     "teamwork": 7.5,
-    "groupNumber": 2
+    "groupNumber": 2,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 54,
@@ -167,7 +185,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 4,
     "teamwork": 10,
-    "groupNumber": 2
+    "groupNumber": 2,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 2,
@@ -184,7 +204,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 4,
     "teamwork": 8,
-    "groupNumber": 2
+    "groupNumber": 2,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 62,
@@ -201,7 +223,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 2,
     "teamwork": 5.5,
-    "groupNumber": 2
+    "groupNumber": 2,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 68,
@@ -218,7 +242,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 6,
     "teamwork": 8.5,
-    "groupNumber": 2
+    "groupNumber": 2,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 81,
@@ -235,7 +261,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 6,
     "teamwork": 6,
-    "groupNumber": 2
+    "groupNumber": 2,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 76,
@@ -252,7 +280,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 4,
     "teamwork": 7.5,
-    "groupNumber": 2
+    "groupNumber": 2,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 49,
@@ -269,7 +299,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 4,
     "teamwork": 7.5,
-    "groupNumber": 2
+    "groupNumber": 2,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 13,
@@ -286,7 +318,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 5,
     "teamwork": 5,
-    "groupNumber": 3
+    "groupNumber": 3,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 36,
@@ -303,7 +337,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 7,
     "teamwork": 6.5,
-    "groupNumber": 3
+    "groupNumber": 3,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 33,
@@ -320,7 +356,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 9,
     "teamwork": 6.5,
-    "groupNumber": 3
+    "groupNumber": 3,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 20,
@@ -337,7 +375,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 5,
     "teamwork": 7.5,
-    "groupNumber": 3
+    "groupNumber": 3,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 11,
@@ -354,7 +394,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 8,
     "teamwork": 8.5,
-    "groupNumber": 3
+    "groupNumber": 3,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 39,
@@ -371,7 +413,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 7,
     "teamwork": 7.5,
-    "groupNumber": 3
+    "groupNumber": 3,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 50,
@@ -388,7 +432,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 3,
     "teamwork": 8,
-    "groupNumber": 3
+    "groupNumber": 3,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 56,
@@ -405,7 +451,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 6,
     "teamwork": 10,
-    "groupNumber": 3
+    "groupNumber": 3,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 51,
@@ -422,7 +470,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 7,
     "teamwork": 4.5,
-    "groupNumber": 4
+    "groupNumber": 4,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 41,
@@ -439,7 +489,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 7,
     "teamwork": 8,
-    "groupNumber": 4
+    "groupNumber": 4,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 29,
@@ -456,7 +508,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 3,
     "teamwork": 7.5,
-    "groupNumber": 4
+    "groupNumber": 4,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 44,
@@ -473,7 +527,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 6,
     "teamwork": 4.5,
-    "groupNumber": 4
+    "groupNumber": 4,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 40,
@@ -490,7 +546,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 5,
     "teamwork": 8.5,
-    "groupNumber": 4
+    "groupNumber": 4,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 16,
@@ -507,7 +565,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 8,
     "teamwork": 9.5,
-    "groupNumber": 4
+    "groupNumber": 4,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 26,
@@ -524,7 +584,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 8,
     "teamwork": 10,
-    "groupNumber": 4
+    "groupNumber": 4,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 5,
@@ -541,7 +603,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 5,
     "teamwork": 9,
-    "groupNumber": 4
+    "groupNumber": 4,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 0,
@@ -558,7 +622,9 @@
     "interactionProgramming": 8,
     "uxEvaluation": 1,
     "teamwork": 7,
-    "groupNumber": 5
+    "groupNumber": 5,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 58,
@@ -575,7 +641,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 10,
     "teamwork": 9.5,
-    "groupNumber": 5
+    "groupNumber": 5,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 28,
@@ -592,7 +660,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 8,
     "teamwork": 9,
-    "groupNumber": 5
+    "groupNumber": 5,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 79,
@@ -609,7 +679,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 2,
     "teamwork": 5.5,
-    "groupNumber": 5
+    "groupNumber": 5,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 10,
@@ -626,7 +698,9 @@
     "interactionProgramming": 7,
     "uxEvaluation": 7,
     "teamwork": 6,
-    "groupNumber": 5
+    "groupNumber": 5,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 63,
@@ -643,7 +717,9 @@
     "interactionProgramming": 7,
     "uxEvaluation": 8,
     "teamwork": 8,
-    "groupNumber": 5
+    "groupNumber": 5,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 25,
@@ -660,7 +736,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 2,
     "teamwork": 5,
-    "groupNumber": 5
+    "groupNumber": 5,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 45,
@@ -677,7 +755,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 5,
     "teamwork": 9,
-    "groupNumber": 5
+    "groupNumber": 5,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 27,
@@ -694,7 +774,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 2,
     "teamwork": 6,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 47,
@@ -711,7 +793,9 @@
     "interactionProgramming": 8,
     "uxEvaluation": 4,
     "teamwork": 7.5,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 19,
@@ -728,7 +812,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 9,
     "teamwork": 9,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 66,
@@ -745,7 +831,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 3,
     "teamwork": 8,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 14,
@@ -762,7 +850,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 7,
     "teamwork": 8,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 7,
@@ -779,7 +869,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 2,
     "teamwork": 7,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 31,
@@ -796,7 +888,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 7,
     "teamwork": 10,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 61,
@@ -813,7 +907,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 7,
     "teamwork": 7,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 70,
@@ -830,7 +926,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 6,
     "teamwork": 10,
-    "groupNumber": 6
+    "groupNumber": 6,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 21,
@@ -847,7 +945,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 1,
     "teamwork": 9,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 37,
@@ -864,7 +964,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 9,
     "teamwork": 7,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 38,
@@ -881,7 +983,9 @@
     "interactionProgramming": 6,
     "uxEvaluation": 9,
     "teamwork": 9.5,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 1,
@@ -898,7 +1002,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 7,
     "teamwork": 9.5,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 64,
@@ -915,7 +1021,9 @@
     "interactionProgramming": 7,
     "uxEvaluation": 7,
     "teamwork": 9,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 60,
@@ -932,7 +1040,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 7,
     "teamwork": 9,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 80,
@@ -949,7 +1059,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 4,
     "teamwork": 6.5,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 59,
@@ -966,7 +1078,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 5,
     "teamwork": 8,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 35,
@@ -983,7 +1097,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 6,
     "teamwork": 8,
-    "groupNumber": 7
+    "groupNumber": 7,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 75,
@@ -1000,7 +1116,9 @@
     "interactionProgramming": 8,
     "uxEvaluation": 8,
     "teamwork": 9.5,
-    "groupNumber": 8
+    "groupNumber": 8,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 42,
@@ -1017,7 +1135,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 7,
     "teamwork": 5.5,
-    "groupNumber": 8
+    "groupNumber": 8,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 30,
@@ -1034,7 +1154,9 @@
     "interactionProgramming": 7,
     "uxEvaluation": 8,
     "teamwork": 9,
-    "groupNumber": 8
+    "groupNumber": 8,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 69,
@@ -1051,7 +1173,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 2,
     "teamwork": 7,
-    "groupNumber": 8
+    "groupNumber": 8,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 23,
@@ -1068,7 +1192,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 7,
     "teamwork": 8,
-    "groupNumber": 8
+    "groupNumber": 8,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 34,
@@ -1085,7 +1211,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 4,
     "teamwork": 7,
-    "groupNumber": 8
+    "groupNumber": 8,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 53,
@@ -1102,7 +1230,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 4,
     "teamwork": 8,
-    "groupNumber": 8
+    "groupNumber": 8,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 57,
@@ -1119,7 +1249,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 9,
     "teamwork": 7,
-    "groupNumber": 8
+    "groupNumber": 8,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 74,
@@ -1136,7 +1268,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 10,
     "teamwork": 8,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 9,
@@ -1153,7 +1287,9 @@
     "interactionProgramming": 7,
     "uxEvaluation": 8,
     "teamwork": 8.5,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 82,
@@ -1170,7 +1306,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 6,
     "teamwork": 6.5,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 22,
@@ -1187,7 +1325,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 8,
     "teamwork": 9,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 72,
@@ -1204,7 +1344,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 5,
     "teamwork": 7.5,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 73,
@@ -1221,7 +1363,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 6,
     "teamwork": 6.5,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 24,
@@ -1238,7 +1382,9 @@
     "interactionProgramming": 1,
     "uxEvaluation": 5,
     "teamwork": 5.5,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 55,
@@ -1255,7 +1401,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 1,
     "teamwork": 5,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 52,
@@ -1272,7 +1420,9 @@
     "interactionProgramming": 2,
     "uxEvaluation": 2,
     "teamwork": 5,
-    "groupNumber": 9
+    "groupNumber": 9,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 65,
@@ -1289,7 +1439,9 @@
     "interactionProgramming": 3,
     "uxEvaluation": 5,
     "teamwork": 10,
-    "groupNumber": 10
+    "groupNumber": 10,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 8,
@@ -1306,7 +1458,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 2,
     "teamwork": 4,
-    "groupNumber": 10
+    "groupNumber": 10,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 78,
@@ -1323,7 +1477,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 5,
     "teamwork": 4.5,
-    "groupNumber": 10
+    "groupNumber": 10,
+    "clusterLabel": "music, art, traveling",
+    "cluster": 2
   },
   {
     "id": 17,
@@ -1340,7 +1496,9 @@
     "interactionProgramming": 5,
     "uxEvaluation": 5,
     "teamwork": 9.5,
-    "groupNumber": 10
+    "groupNumber": 10,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 18,
@@ -1357,7 +1515,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 2,
     "teamwork": 8,
-    "groupNumber": 10
+    "groupNumber": 10,
+    "clusterLabel": "games, computer, video",
+    "cluster": 0
   },
   {
     "id": 43,
@@ -1374,7 +1534,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 8,
     "teamwork": 8.5,
-    "groupNumber": 10
+    "groupNumber": 10,
+    "clusterLabel": "movies, reading, startups",
+    "cluster": 1
   },
   {
     "id": 15,
@@ -1391,7 +1553,9 @@
     "interactionProgramming": 4,
     "uxEvaluation": 4,
     "teamwork": 8.5,
-    "groupNumber": 10
+    "groupNumber": 10,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   },
   {
     "id": 12,
@@ -1408,6 +1572,8 @@
     "interactionProgramming": 2,
     "uxEvaluation": 4,
     "teamwork": 9.5,
-    "groupNumber": 10
+    "groupNumber": 10,
+    "clusterLabel": "photography, design, programming",
+    "cluster": 3
   }
 ]

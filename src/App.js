@@ -25,7 +25,6 @@ class App extends Component {
   }
 
   handleTableHeaderClick = (sortBy) => () => {
-    console.log(sortBy)
     let increasing = undefined
     if(this.state.tableSorting.increasing === true) {
       increasing = false
