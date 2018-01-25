@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Radar, RadarChart, PolarGrid, Legend, PolarAngleAxis, PolarRadiusAxis, Tooltip } from 'recharts'
+import { Radar, RadarChart, PolarGrid, Legend, PolarAngleAxis, PolarRadiusAxis, Tooltip, ResponsiveContainer } from 'recharts'
 
 import StudentList from './StudentList'
 
@@ -34,15 +34,17 @@ const GroupDetails = (props) => {
 
     return (
       <div className="">
-        <RadarChart width={450} height={300} data={radarChartData} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
-          <PolarGrid />
-          <PolarAngleAxis dataKey="skill" />
-          <PolarRadiusAxis angle={36} domain={[0, 10]}/>
-          <Radar name={`Group ${props.data.groupNumber}`} dataKey="groupValue" stroke={props.color} fill={props.color} fillOpacity={0.5}/>
-          <Radar style={selectedStudentRadar.style} name={selectedStudentRadar.alias} dataKey="studentValue" stroke="#f5c6cb" fill="#f5c6cb"fillOpacity={0.5}/>
-          <Legend />
-          <Tooltip/>
-        </RadarChart>
+        <ResponsiveContainer width="100%" height={300}>
+          <RadarChart data={radarChartData} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+            <PolarGrid />
+            <PolarAngleAxis dataKey="skill" />
+            <PolarRadiusAxis angle={36} domain={[0, 10]}/>
+            <Radar name={`Group ${props.data.groupNumber}`} dataKey="groupValue" stroke={props.color} fill={props.color} fillOpacity={0.5}/>
+            <Radar style={selectedStudentRadar.style} name={selectedStudentRadar.alias} dataKey="studentValue" stroke="#f5c6cb" fill="#f5c6cb"fillOpacity={0.5}/>
+            <Legend />
+            <Tooltip/>
+          </RadarChart>
+        </ResponsiveContainer>
         <StudentList 
           students={props.data.students} 
           onStudentClick={props.onStudentClick}

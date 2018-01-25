@@ -4,7 +4,7 @@ import { mean } from 'mathjs'
 import './App.css'
 import students from './assets/data.json'
 
-import { GroupTable, GroupDetails, GroupTitle } from './components'
+import { GroupTable, GroupDetails, GroupTitle, ExchangeButton } from './components'
 
 class App extends Component {
 
@@ -16,8 +16,30 @@ class App extends Component {
       selectedGroupAId: undefined,
       selectedGroupBId: undefined,
       selectedStudentAId: undefined,
-      selectedStudentBId: undefined
+      selectedStudentBId: undefined,
+      tableSorting: {
+        by: 'groupNumber',
+        increasing: true,
+      },
     }
+  }
+
+  handleTableHeaderClick = (sortBy) => () => {
+    console.log(sortBy)
+    let increasing = undefined
+    if(this.state.tableSorting.increasing === true) {
+      increasing = false
+    }
+    else {
+      increasing = true
+    }
+    
+    this.setState(state => ({
+      tableSorting: {
+        by: sortBy,
+        increasing, 
+      }
+    }))
   }
 
   handleTableRowClick = (groupNumber) => () => {
@@ -65,6 +87,23 @@ class App extends Component {
     }
   }
 
+  handleExchangeButtonClick = () => {
+    // Exchange this.state.selectedStudentAId, this.state.selectedStudentBId
+    // get this.state.students, find the two students, change and setState with new array
+    // setState of the selectedStudentAId, selectedStudentBId to undefined
+    const studentA = this.state.students.find(student => student.id === this.state.selectedStudentAId)
+    const studentB = this.state.students.find(student => student.id === this.state.selectedStudentBId)
+    const studentAGroup = studentA.groupNumber
+    const studentBGroup = studentB.groupNumber
+    studentA.groupNumber = studentBGroup
+    studentB.groupNumber = studentAGroup
+    this.setState(state => ({
+      selectedStudentAId: undefined,
+      selectedStudentBId: undefined,
+      students: this.state.students
+    }))
+  }
+
   render() {
 
     const getMaxSkillValue = (studentsInOneGroup, skillName) => {
@@ -75,6 +114,31 @@ class App extends Component {
         }
         return acc
       }, 0)
+    }
+
+    const sort = (array, byVariableName, increasing) => {
+      if(increasing === false) {
+        return array.sort((a,b) => {
+          if(a[byVariableName] < b[byVariableName]) {
+            return 1
+          }
+          if(a[byVariableName] > b[byVariableName]) {
+            return -1
+          }
+          return 0
+        })
+      }
+      else {
+        return array.sort((a,b) => {
+          if(a[byVariableName] > b[byVariableName]) {
+            return 1
+          }
+          if(a[byVariableName] < b[byVariableName]) {
+            return -1
+          }
+          return 0
+        })
+      }
     }
 
     const groupTableData = new Array(10).fill(1).map((value, index) => {
@@ -104,17 +168,23 @@ class App extends Component {
       return group
     })
 
-    const selectedGroupA = groupTableDataWithAverageScores.find(
+    const sortedGroupTableDataWithAverageScores = sort(
+      groupTableDataWithAverageScores, 
+      this.state.tableSorting.by,
+      this.state.tableSorting.increasing
+    )
+
+    const selectedGroupA = sortedGroupTableDataWithAverageScores.find(
       group => group.groupNumber === this.state.selectedGroupAId
     )
-    const selectedGroupB = groupTableDataWithAverageScores.find(
+    const selectedGroupB = sortedGroupTableDataWithAverageScores.find(
       group => group.groupNumber === this.state.selectedGroupBId
     )
 
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Student Group Formation Visualization</h1>
+          <h1 className="App-title">The Sorting Hat</h1>
         </header>
         <div id="appView" className="container-fluid">
           <div className="row">
@@ -125,8 +195,10 @@ class App extends Component {
           <div id="tableView" className="row">
             <div className="col-12">
               <GroupTable 
-                data={groupTableDataWithAverageScores}
+                data={sortedGroupTableDataWithAverageScores}
+                sorting={this.state.tableSorting}
                 onTableRowClick={this.handleTableRowClick}
+                onTableHeaderClick={this.handleTableHeaderClick}
                 primarySelection={this.state.selectedGroupAId}
                 secondarySelection={this.state.selectedGroupBId}
                 disableRowPointer={(this.state.selectedGroupAId !== undefined) && (this.state.selectedGroupBId !== undefined)}
@@ -152,7 +224,11 @@ class App extends Component {
               </div>
             </div>
             <div id="exchangeButtonContainer" className="col-md-2">
-              <button type="button" class="btn btn-outline-danger">Exchange students</button>
+              <ExchangeButton 
+                shouldRender={this.state.selectedStudentAId !== undefined && 
+                              this.state.selectedStudentBId !== undefined}
+                onClick={this.handleExchangeButtonClick}
+              />
             </div>
             <div className="col-md-5">
               <div className="row groupTitle">

@@ -12,8 +12,8 @@ const StudentList = (props) => {
               className = 'table-danger'
             }
             return (
-              <tr className={className}>
-                <td scope="row" key={student.id} onClick={props.onStudentClick(student.id)}>{student.alias}</td>
+              <tr key={student.id} className={className}>
+                <td onClick={props.onStudentClick(student.id)}>{student.alias}</td>
               </tr>
             )
           })

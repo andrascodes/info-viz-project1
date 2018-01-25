@@ -1,23 +1,41 @@
 import React from 'react'
 
 const GroupTable = props => {
+
+  const headerTitles = [
+    { id: 'groupNumber', text: 'Group' },
+    { id: 'averageScore', text: 'Avg. score' },
+    { id: 'infoViz', text: 'Info. Vis.' },
+    { id: 'statistics', text: 'Statistics' },
+    { id: 'math', text: 'Math' },
+    { id: 'arts', text: 'Arts' },
+    { id: 'programming', text: 'Coding' },
+    { id: 'graphicsProgramming', text: 'Graphics' },
+    { id: 'interactionProgramming', text: 'Interaction' },
+    { id: 'git', text: 'Git' },
+    { id: 'uxEvaluation', text: 'UX Eval.' },
+    { id: 'teamwork', text: 'Teamwork' },
+  ]
+
   return (
     <div className="table-responsive">
       <table className="table-sm table-bordered table-hover">
         <thead>
           <tr>
-            <th scope="col">Group</th>
-            <th scope="col">Avg. score</th>
-            <th scope="col">Info. Vis.</th>
-            <th scope="col">Statistics</th>
-            <th scope="col">Math</th>
-            <th scope="col">Arts</th>
-            <th scope="col">Coding</th>
-            <th scope="col">Graphics</th>
-            <th scope="col">Interaction</th>
-            <th scope="col">Git</th>
-            <th scope="col">UX Eval.</th>
-            <th scope="col">Teamwork</th>
+            {
+              headerTitles.map(({ id, text }) => {
+                let className = 'sortable'
+                if(id === props.sorting.by && props.sorting.increasing === true) {
+                  className = 'increasing'
+                }
+                else if(id === props.sorting.by && props.sorting.increasing === false) {
+                  className = 'decreasing'
+                }
+                return (
+                  <th key={id} scope="col" onClick={props.onTableHeaderClick(id)} className={className}>{text}</th>
+                )
+              })
+            }
           </tr>
         </thead>
         <tbody>
@@ -42,8 +60,8 @@ const GroupTable = props => {
                   <th scope="row">{group.groupNumber}</th>
                   <td>{group.averageScore}</td>
                   <td>{group.infoViz}</td>
-                  <td>{group.math}</td>
                   <td>{group.statistics}</td>
+                  <td>{group.math}</td>
                   <td>{group.arts}</td>
                   <td>{group.programming}</td>
                   <td>{group.graphicsProgramming}</td>
