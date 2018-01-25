@@ -22,8 +22,8 @@
   
 }
 
-#groupTitle {
-  font-size: 1.2rem;
+#tableTitle {
+  font-size: 1.3rem;
   margin: 1rem 0rem;
 }
 
@@ -45,4 +45,29 @@ tbody > tr {
 
 .table-success {
   cursor: pointer;
+}
+
+#exchangeButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#groupView {
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.recharts-wrapper {
+  margin: auto;
+}
+
+.studentList {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.groupTitle h3 {
+  text-align: center;
+  font-size: 1.3rem;
 }

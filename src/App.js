@@ -4,7 +4,7 @@ import { mean } from 'mathjs'
 import './App.css'
 import students from './assets/data.json'
 
-import { GroupTable, GroupDetails } from './components'
+import { GroupTable, GroupDetails, GroupTitle } from './components'
 
 class App extends Component {
 
@@ -22,32 +22,47 @@ class App extends Component {
 
   handleTableRowClick = (groupNumber) => () => {
 
+    const stateChange = {}
     if(this.state.selectedGroupAId === undefined && this.state.selectedGroupBId === undefined) {
-      this.setState(state => ({
-        selectedGroupAId: groupNumber
-      }))
+      stateChange.selectedGroupAId = groupNumber
+      stateChange.selectedStudentAId = undefined
+      stateChange.selectedStudentBId = undefined
     }
     else if(this.state.selectedGroupAId === groupNumber) {
-      this.setState(state => ({
-        selectedGroupAId: undefined
-      }))
+      stateChange.selectedGroupAId = undefined
+      stateChange.selectedStudentAId = undefined
     }
     else if(this.state.selectedGroupBId === groupNumber) {
-      this.setState(state => ({
-        selectedGroupBId: undefined
-      }))
+      stateChange.selectedGroupBId = undefined
+      stateChange.selectedStudentBId = undefined
     }
     else if(this.state.selectedGroupAId === undefined) {
-      this.setState(state => ({
-        selectedGroupAId: groupNumber
-      }))
+      stateChange.selectedGroupAId = groupNumber
+      stateChange.selectedStudentAId = undefined
     }
     else if(this.state.selectedGroupBId === undefined) {
-      this.setState(state => ({
-        selectedGroupBId: groupNumber
-      }))
+      stateChange.selectedGroupBId = groupNumber
+      stateChange.selectedStudentBId = undefined
     }
 
+    this.setState(state => stateChange)
+  }
+
+  handleStudentClick = (selectedGroup) => (studentId) => () => {
+    switch (selectedGroup) {
+      case 'A':
+        this.setState(state => ({
+          selectedStudentAId: studentId
+        }))
+        break;
+      case 'B':
+        this.setState(state => ({
+          selectedStudentBId: studentId
+        }))
+        break;
+      default:
+        break;
+    }
   }
 
   render() {
@@ -96,20 +111,6 @@ class App extends Component {
       group => group.groupNumber === this.state.selectedGroupBId
     )
 
-    // const student = this.state.students[this.state.currentStudentId]
-    // const radarChartData = [
-    //   { skill: 'Information Visualization', value: student.infoViz },
-    //   { skill: 'Statistics', value: student.statistics },
-    //   { skill: 'Math', value: student.math },
-    //   { skill: 'Arts', value: student.arts },
-    //   { skill: 'Programming', value: student.programming },
-    //   { skill: 'Computer Graphics', value: student.graphicsProgramming },
-    //   { skill: 'Interaction Coding', value: student.interactionProgramming },
-    //   { skill: 'Version Control', value: student.git },
-    //   { skill: 'UX Evaluation', value: student.uxEvaluation },
-    //   { skill: 'Teamwork', value: student.teamwork },
-    // ]
-
     return (
       <div className="App">
         <header className="App-header">
@@ -118,10 +119,10 @@ class App extends Component {
         <div id="appView" className="container-fluid">
           <div className="row">
             <div className="col-12">
-              <h3 id="groupTitle">Groups balanced on skill level</h3>
+              <h3 id="tableTitle">Groups balanced on skill level</h3>
             </div>
           </div>
-          <div className="row">
+          <div id="tableView" className="row">
             <div className="col-12">
               <GroupTable 
                 data={groupTableDataWithAverageScores}
@@ -132,12 +133,43 @@ class App extends Component {
               />
             </div>
           </div>
-          <div className="row">
-            <div className="col-6">
-              <GroupDetails data={selectedGroupA}/>
+          <div id="groupView" className="row">
+            <div className="col-md-5">
+              <div className="row groupTitle">
+                <div className="col-12">
+                  <GroupTitle text={this.state.selectedGroupAId}/>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12">
+                  <GroupDetails 
+                    data={selectedGroupA} 
+                    color="#b8daff"
+                    onStudentClick={this.handleStudentClick('A')}
+                    selectedStudentId={this.state.selectedStudentAId}
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-6">
-              <GroupDetails data={selectedGroupB}/>
+            <div id="exchangeButtonContainer" className="col-md-2">
+              <button type="button" class="btn btn-outline-danger">Exchange students</button>
+            </div>
+            <div className="col-md-5">
+              <div className="row groupTitle">
+                <div className="col-12">
+                  <GroupTitle text={this.state.selectedGroupBId}/>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12">
+                  <GroupDetails 
+                    data={selectedGroupB} 
+                    color="#c3e6cb"
+                    onStudentClick={this.handleStudentClick('B')}
+                    selectedStudentId={this.state.selectedStudentBId}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
