@@ -90,3 +90,40 @@ tbody > tr {
   text-align: center;
   font-size: 1.3rem;
 }
+
+.table-danger {
+  color: black;
+}
+
+.clusterCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clusterLabel {
+  color: white;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 85%;
+}
+
+.clusterZero {
+  background-color: #345c96;
+}
+
+.clusterOne {
+  background-color: #fa8f1c;
+  color: black
+}
+
+.clusterTwo {
+  background-color: #f3d22a;
+  color: black
+}
+
+.clusterThree {
+  background-color: #775c0d;
+}
