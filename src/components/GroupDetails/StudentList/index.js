@@ -5,10 +5,10 @@ import ClusterLabel from './ClusterLabel'
 const StudentList = (props) => {
 
   return(
-    <table className="table table-bordered studentList">
+    <table className="table studentList-hover studentList">
       <thead>
         <tr>
-          <th scope="col">Name</th>
+          <th scope="col">Student</th>
           <th scope="col">Interest</th>
         </tr>
       </thead>
